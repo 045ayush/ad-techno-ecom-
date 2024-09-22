@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "Cart" ALTER COLUMN "totalPrice" SET DEFAULT 0,
+ALTER COLUMN "totalItem" SET DEFAULT 0,
+ALTER COLUMN "totalDiscountedPrice" SET DEFAULT 0,
+ALTER COLUMN "discounte" SET DEFAULT 0;
