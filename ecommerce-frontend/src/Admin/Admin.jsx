@@ -22,6 +22,7 @@ import OrderDetails from './Components/OrderDetails';
 import UserDetails from './Components/userDetails';
 import LoginUserForm from './Login';
 import { getUser, logout } from "../Redux/Auth/Action";
+import EditVariant from './Components/EditVariant';
 
 const style = {
   position: "absolute",
@@ -173,6 +174,7 @@ export const Admin = () => {
             <Route path="/orders" element={<OrdersTable/>}></Route>
             <Route path="/customers" element={<Customers/>}></Route>
             <Route path="/order/:orderId" element={<OrderDetails/>}></Route>
+            <Route path="/variant/:variantId" element={<EditVariant/>}></Route>
             <Route path="/user/:userId" element={<UserDetails/>}></Route>
             {/* <Route path="/demo" element={<DemoAdmin />}></Route> */}
           </Routes>

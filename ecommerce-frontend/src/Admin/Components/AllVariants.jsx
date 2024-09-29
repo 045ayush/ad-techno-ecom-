@@ -66,7 +66,9 @@ const AllVariants = () => {
     navigate({ search: `?${query}` });
   };
 
-
+  const handleEdit=(variantId)=>{
+    navigate(`/admin/variant/${variantId}`)
+  }
 
   return (
     <Box width={"100%"}>
@@ -158,6 +160,7 @@ const AllVariants = () => {
                 {/* <TableCell sx={{ textAlign: "center" }}>Category</TableCell> */}
                 <TableCell sx={{ textAlign: "center" }}>Price</TableCell>
                 <TableCell sx={{ textAlign: "center" }}>Quantity</TableCell>
+                <TableCell sx={{ textAlign: "center", textWrap:"nowrap" }}>Edit Details</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -191,7 +194,9 @@ const AllVariants = () => {
                   {/* <TableCell sx={{ textAlign: "center" }}>{item.productCategory}</TableCell> */}
                   <TableCell sx={{ textAlign: "center" }}>{item.variantDiscountedPrice}</TableCell>
                   <TableCell sx={{ textAlign: "center" }}>{item.variantQuantity}</TableCell>
-              
+                  <TableCell sx={{ textAlign: "center" }}>
+                    <Button variant="text" onClick={() => handleEdit(item.variantId)}>EDIT</Button>
+                  </TableCell>
                   
                 </TableRow>
               ))}

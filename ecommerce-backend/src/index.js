@@ -54,4 +54,4 @@ app.use("/api/admin/orders",adminOrderRoutes);
 const cloudinaryRoutes=require("./routes/cloudinary.routes.js")
 app.use("/api/admin/cloudinary",cloudinaryRoutes)
 
-module.exports=app;
+module.exports={app};
