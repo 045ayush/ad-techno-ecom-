@@ -40,7 +40,7 @@ function CustomerRoutes() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/help-support" element={<HelpAndSupport />} />
           <Route path="/shipping-delivery" element={<ShippingAndDelivery />} />
-          <Route path="/returns-exchanges" eleoment={<ReturnsAndExchanges />} />
+          <Route path="/returns-exchanges" element={<ReturnsAndExchanges />} />
           <Route
             path="/warranty-information"
             element={<WarrantyInformation />}
