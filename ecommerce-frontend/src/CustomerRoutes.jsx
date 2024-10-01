@@ -6,12 +6,10 @@ import Footer from "./Components/Footer/Footer";
 import Homepage from "./Pages/HomePage/Homepage";
 import CategoryPage from "./Pages/CategoryPage/CategoryPage";
 import AboutUs from "./Pages/Footer Pages/AboutUs";
-import HelpAndSupport from "./Pages/Footer Pages/HelpAndSupport";
 import ShippingAndDelivery from "./Pages/Footer Pages/ShippingAndDelivery";
 import ReturnsAndExchanges from "./Pages/Footer Pages/ReturnsAndExchanges";
 import WarrantyInformation from "./Pages/Footer Pages/WarrantyInformation";
 import ContactUs from "./Pages/Footer Pages/ContactUs";
-import TermsOfService from "./Pages/Footer Pages/TermsOfService";
 import PrivacyPolicy from "./Pages/Footer Pages/PrivacyPolicy";
 import AccessibilityStatement from "./Pages/Footer Pages/AccessibilityStatement";
 import Cart from "./Pages/Cart/Cart";
@@ -20,6 +18,7 @@ import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import Order from "./Components/orders/Order";
 import OrderDetails from "./Components/orders/OrderDetails";
 import PaymentSuccess from "./Pages/paymentSuccess/PaymentSuccess";
+import TermsAndConditions from "./Pages/Footer Pages/TermsOfService";
 
 function CustomerRoutes() {
   const location = useLocation();
@@ -38,7 +37,6 @@ function CustomerRoutes() {
           <Route path="/register" element={<Homepage />} />
           <Route path="/category/:categoryName" element={<CategoryPage />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/help-support" element={<HelpAndSupport />} />
           <Route path="/shipping-delivery" element={<ShippingAndDelivery />} />
           <Route path="/returns-exchanges" element={<ReturnsAndExchanges />} />
           <Route
@@ -46,7 +44,8 @@ function CustomerRoutes() {
             element={<WarrantyInformation />}
           />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/terms-and-condition" element={<TermsAndConditions />} />
+
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route
             path="/accessibility-statement"

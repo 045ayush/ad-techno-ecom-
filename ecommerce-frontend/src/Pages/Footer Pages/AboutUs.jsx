@@ -10,7 +10,7 @@ const AboutUs = () => {
         </p>
         <h2 className="text-4xl font-semibold mb-4 text-slate-700">Our Story</h2>
         <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-          Founded in [Year], Ad-Techno Solutions began with a vision to offer high-quality refurbished tech products at affordable prices. We are a team of tech enthusiasts committed to delivering exceptional value and excellent customer service.
+          Founded in 2013, Ad-Techno Solutions began with a vision to offer high-quality refurbished tech products at affordable prices. We are a team of tech enthusiasts committed to delivering exceptional value and excellent customer service.
         </p>
         <h2 className="text-4xl font-semibold mb-4 text-slate-700">Our Values</h2>
         <ul className="list-disc list-inside text-lg text-slate-600 mb-6 leading-relaxed space-y-2">
@@ -24,10 +24,11 @@ const AboutUs = () => {
           If you have any questions or need more information about our products, please feel free to reach out to us. We are here to help!
         </p>
         <p className="text-lg text-slate-600 mb-4 leading-relaxed">
-          Email: <a href="mailto:info@adtechnosolutions.com" className="text-blue-600 hover:underline">info@adtechnosolutions.com</a>
+          Email: <a href="mailto:ranjeet@adtechnosolutions.com" className="text-blue-600 hover:underline">ranjeet@adtechnosolutions.com</a>,<a href="mailto:admin@adtechnosolutions.com" className="text-blue-600 hover:underline">admin@adtechnosolutions.com</a>
         </p>
         <p className="text-lg text-slate-600">
-          Phone: <a href="tel:+1234567890" className="text-blue-600 hover:underline">+1 (234) 567-890</a>
+          Phone: <a href="tel:9711546037" className="text-blue-600 hover:underline">9711546037</a>,
+          <a href="tel:9953017197" className="text-blue-600 hover:underline">9953017197</a>
         </p>
       </div>
     </div>

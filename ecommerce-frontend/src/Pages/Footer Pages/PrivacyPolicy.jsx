@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-4xl font-semibold mb-4 text-slate-700">Contact Us</h2>
             <p className="text-lg text-slate-600">
-              If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at <a href="mailto:support@yourcompany.com" className="text-blue-600 hover:underline">support@yourcompany.com</a>.
+              If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at <a href="mailto:admin@adtechnosolutions.com" className="text-blue-600 hover:underline">admin@adtechnosolutions.com</a>.
             </p>
           </section>
         </div>

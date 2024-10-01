@@ -53,7 +53,7 @@ const WarrantyInformation = () => {
               To make a warranty claim, please follow these steps:
             </p>
             <ol className="list-decimal list-inside text-lg text-slate-600 mt-4 space-y-2">
-              <li>Contact our customer service team at <a href="mailto:support@yourcompany.com" className="text-blue-600 hover:underline">support@yourcompany.com</a>.</li>
+              <li>Contact our customer service team at <a href="mailto:admin@adtechnosolutions.com" className="text-blue-600 hover:underline">admin@adtechnosolutions.com</a>.</li>
               <li>Provide your order number and a description of the issue.</li>
               <li>Our team will provide instructions on how to return the product for inspection.</li>
               <li>Upon inspection, we will either repair or replace the product as per our warranty policy.</li>
@@ -64,7 +64,7 @@ const WarrantyInformation = () => {
           <section>
             <h2 className="text-4xl font-semibold mb-4 text-slate-700">Contact Us</h2>
             <p className="text-lg text-slate-600">
-              If you have any questions about our warranty policy, please reach out to us at <a href="mailto:support@yourcompany.com" className="text-blue-600 hover:underline">support@yourcompany.com</a>.
+              If you have any questions about our warranty policy, please reach out to us at <a href="mailto:admin@adtechnosolutions.com" className="text-blue-600 hover:underline">admin@adtechnosolutions.com</a>.
             </p>
           </section>
         </div>

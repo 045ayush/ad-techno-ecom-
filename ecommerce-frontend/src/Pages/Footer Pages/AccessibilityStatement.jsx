@@ -20,10 +20,10 @@ const AccessibilityStatement = () => {
           If you encounter any issues while accessing our website or need assistance with any aspect of our accessibility features, please contact us. We are dedicated to addressing any concerns you may have.
         </p>
         <p className="text-lg text-slate-600 mb-4 leading-relaxed">
-          Email: <a href="mailto:accessibility@adtechnosolutions.com" className="text-blue-600 hover:underline">accessibility@adtechnosolutions.com</a>
+          Email: <a href="mailto:admin@adtechnosolutions.com" className="text-blue-600 hover:underline">admin@adtechnosolutions.com</a>
         </p>
-        <p className="text-lg text-slate-600">
-          Phone: <a href="tel:+1234567890" className="text-blue-600 hover:underline">+1 (234) 567-890</a>
+        <p className="text-lg text-slate-600 mb-6">
+          Phone: <a href="tel:9953017197" className="text-blue-600 hover:underline">9953017197</a> , <a href="tel:9711546037" className="text-blue-600 hover:underline">9711546037</a>
         </p>
         <h2 className="text-4xl font-semibold mb-4 text-slate-700">Additional Resources</h2>
         <p className="text-lg text-slate-600 leading-relaxed">

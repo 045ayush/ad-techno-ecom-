@@ -4,8 +4,8 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import {
   FaWhatsapp,
   FaFacebookF,
-  FaTwitter,
-  FaInstagram,
+  FaGoogle ,
+  FaMapMarkerAlt  ,
   FaLinkedinIn,
 } from "react-icons/fa";
 
@@ -25,7 +25,7 @@ export default function Footer() {
       setShowScrollTopButton(true);
     } else {
       setShowScrollTopButton(false);
-      setShowTooltip(true)
+      setShowTooltip(true);
     }
   };
 
@@ -102,14 +102,6 @@ export default function Footer() {
                   className="p-4 pt-1 rounded-md bg-slate-800 flex flex-wrap"
                 >
                   <ul className="flex flex-wrap text-sm text-slate-400 w-full">
-                    <li className="flex-1 min-w-[45%]">
-                      <Link
-                        to="/help-support"
-                        className="block py-2 hover:text-white transition"
-                      >
-                        Help & Support
-                      </Link>
-                    </li>
                     <li className="flex-1 min-w-[45%]">
                       <Link
                         to="/shipping-delivery"
@@ -206,14 +198,7 @@ export default function Footer() {
                         Desktops
                       </Link>
                     </li>
-                    <li className="flex-1 min-w-[45%]">
-                      <Link
-                        to="/category/networking-devices"
-                        className="block py-2 hover:text-white transition"
-                      >
-                        Networking Devices
-                      </Link>
-                    </li>
+
                     <li className="flex-1 min-w-[45%]">
                       <Link
                         to="/category/surveillance-devices"
@@ -232,14 +217,6 @@ export default function Footer() {
           <div className="hidden lg:block">
             <h4 className="text-2xl font-semibold mb-4">Customer Service</h4>
             <ul className="text-sm text-slate-400 space-y-2">
-              <li>
-                <Link
-                  to="/help-support"
-                  className="hover:text-white transition"
-                >
-                  Help & Support
-                </Link>
-              </li>
               <li>
                 <Link
                   to="/shipping-delivery"
@@ -282,26 +259,24 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/category/laptops" className="hover:text-white transition">
+                <Link
+                  to="/category/laptops?id=2"
+                  className="hover:text-white transition"
+                >
                   Laptops
                 </Link>
               </li>
               <li>
-                <Link to="/category/desktops" className="hover:text-white transition">
+                <Link
+                  to="/category/desktops?id=1"
+                  className="hover:text-white transition"
+                >
                   Desktops
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/category/networking-devices"
-                  className="hover:text-white transition"
-                >
-                  Networking Devices
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/category/surveillance-devices"
+                  to="/category/surveillance?id=5"
                   className="hover:text-white transition"
                 >
                   Surveillance Devices
@@ -312,92 +287,80 @@ export default function Footer() {
 
           {/* Connect With Us */}
           <div>
-          <h4 className="text-2xl font-semibold mb-4">Stay Connected</h4>
+            <h4 className="text-2xl font-semibold mb-4">Stay Connected</h4>
             <p className="text-sm text-slate-400 mb-4">
-              Subscribe to our newsletter for the latest updates and exclusive offers.
+            Stay updated on exclusive deals, special offers, and product launches. Connect with us, leave a review, or just google us !!
             </p>
-            <form className="flex mb-6">
-              <input
-                type="email"
-                placeholder="Enter your email..."
-                className="w-full px-4 py-2 rounded-l-md bg-slate-800 text-white placeholder-slate-400 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="px-3 py-2 bg-slate-700 text-white font-semibold rounded-r-md hover:bg-slate-800 focus:outline-none transition"
+
+            <div className="flex space-x-4 pt-2">
+            <a
+                href="https://whatsapp.com/channel/0029Va5krhNGOj9l2g4OGE37"
+                className="text-white hover:text-slate-400 transition"
+                aria-label="WhatsApp"
               >
-                Subscribe
-              </button>
-              </form>
-            <div className="flex space-x-4">
+                <FaWhatsapp />
+              </a>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100090267909255"
                 className="text-white hover:text-slate-400 transition"
                 aria-label="Facebook"
               >
                 <FaFacebookF />
               </a>
               <a
-                href="#"
-                className="text-white hover:text-slate-400 transition"
-                aria-label="Twitter"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="#"
-                className="text-white hover:text-slate-400 transition"
-                aria-label="Instagram"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="#"
+                href="https://www.linkedin.com/in/ad-techno-solutions-ad-techno-solutions-40a668265/"
                 className="text-white hover:text-slate-400 transition"
                 aria-label="LinkedIn"
               >
                 <FaLinkedinIn />
               </a>
               <a
-                href="#"
+                href="https://g.co/kgs/CCNfWJ"
                 className="text-white hover:text-slate-400 transition"
                 aria-label="WhatsApp"
               >
-                <FaWhatsapp />
+                <FaGoogle  />
+              </a>
+              <a
+                href="https://g.co/kgs/5zLzDK"
+                className="text-white hover:text-slate-400 transition"
+                aria-label="WhatsApp"
+              >
+                <FaMapMarkerAlt    />
               </a>
             </div>
           </div>
         </div>
         <div className="mt-12 border-t border-slate-700 pt-8 text-sm text-slate-400 text-center">
-        <p>
-          &copy; {new Date().getFullYear()} Ad-Techno Solutions. All rights
-          reserved.
-        </p>
-        <p>
-          <Link
-            to="/terms-of-service"
-            className="hover:text-white transition underline lg:no-underline"
-          >
-            Terms of Service
-          </Link>{" "}
-          |
-          <Link
-            to="/privacy-policy"
-            className="hover:text-white transition underline lg:no-underline"
-          >
-            {" "}
-            Privacy Policy
-          </Link>
-        </p>
-        <p className="mt-3">
-          <Link
-            to="/accessibility-statement"
-            className="text-slate-400 hover:text-white transition underline lg:no-underline"
-          >
-            Accessibility Statement
-          </Link>
-        </p>
-      </div>
+          <p>
+            &copy; {new Date().getFullYear()} Ad-Techno Solutions. All rights
+            reserved.
+          </p>
+          <p>
+            <Link
+              to="/terms-and-condition"
+              className="hover:text-white transition underline lg:no-underline"
+            >
+              Terms & Conditions
+            </Link>{" "}
+            |
+            <Link
+              to="/privacy-policy"
+              className="hover:text-white transition underline lg:no-underline"
+            >
+              {" "}
+              Privacy Policy
+            </Link>
+          </p>
+          <p className="mt-3">
+            <Link
+              to="/accessibility-statement"
+              className="text-slate-400 hover:text-white transition underline lg:no-underline"
+            >
+              Accessibility Statement
+            </Link>
+          </p>
+        </div>
       </div>
 
       {showScrollTopButton && (
@@ -407,7 +370,9 @@ export default function Footer() {
           aria-label="Scroll to top"
         >
           {showTooltip && (
-            <span className="pl-3 text-sm hidden group-hover:block">Scroll to top</span>
+            <span className="pl-3 text-sm hidden group-hover:block">
+              Scroll to top
+            </span>
           )}
           <KeyboardArrowUpIcon />
         </button>

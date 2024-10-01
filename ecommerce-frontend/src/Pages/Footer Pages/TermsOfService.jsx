@@ -1,17 +1,16 @@
 import React from 'react';
 
-const TermsOfService = () => {
+const TermsAndConditions = () => {
   return (
     <div className="bg-gray-100 text-gray-900 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-5xl font-bold mb-6 text-center text-slate-800">Terms of Service</h1>
+        <h1 className="text-5xl font-bold mb-6 text-center text-slate-800">Terms and Conditions</h1>
         <p className="text-lg text-slate-600 mb-6 leading-relaxed text-center">
-          Please read these terms of service carefully before using our website or services.
+          Please read these terms and conditions carefully before using our website or services.
         </p>
 
-        {/* Introduction */}
+        {/* Introduction */} 
         <div className="space-y-8">
-          {/* Introduction */}
           <section>
             <h2 className="text-4xl font-semibold mb-4 text-slate-700">Introduction</h2>
             <p className="text-lg text-slate-600">
@@ -19,7 +18,7 @@ const TermsOfService = () => {
             </p>
           </section>
 
-          {/* User Responsibilities */}
+          {/* User Responsibilities */} 
           <section>
             <h2 className="text-4xl font-semibold mb-4 text-slate-700">User Responsibilities</h2>
             <p className="text-lg text-slate-600">
@@ -30,7 +29,7 @@ const TermsOfService = () => {
             </p>
           </section>
 
-          {/* Intellectual Property */}
+          {/* Intellectual Property */} 
           <section>
             <h2 className="text-4xl font-semibold mb-4 text-slate-700">Intellectual Property</h2>
             <p className="text-lg text-slate-600">
@@ -38,7 +37,7 @@ const TermsOfService = () => {
             </p>
           </section>
 
-          {/* Limitation of Liability */}
+          {/* Limitation of Liability */} 
           <section>
             <h2 className="text-4xl font-semibold mb-4 text-slate-700">Limitation of Liability</h2>
             <p className="text-lg text-slate-600">
@@ -46,19 +45,19 @@ const TermsOfService = () => {
             </p>
           </section>
 
-          {/* Changes to Terms */}
+          {/* Changes to Terms and Conditions */} 
           <section>
-            <h2 className="text-4xl font-semibold mb-4 text-slate-700">Changes to Terms</h2>
+            <h2 className="text-4xl font-semibold mb-4 text-slate-700">Changes to Terms and Conditions</h2>
             <p className="text-lg text-slate-600">
-              We may update these terms of service from time to time. We will notify you of any changes by posting the new terms on our website. Your continued use of our website after any changes signifies your acceptance of the updated terms.
+              We may update these terms and conditions from time to time. We will notify you of any changes by posting the new terms on our website. Your continued use of our website after any changes signifies your acceptance of the updated terms.
             </p>
           </section>
 
-          {/* Contact Us */}
+          {/* Contact Us */} 
           <section>
             <h2 className="text-4xl font-semibold mb-4 text-slate-700">Contact Us</h2>
             <p className="text-lg text-slate-600">
-              If you have any questions about these terms of service, please contact us at <a href="mailto:support@yourcompany.com" className="text-blue-600 hover:underline">support@yourcompany.com</a>.
+              If you have any questions about these terms and conditions, please contact us at <a href="mailto:admin@adtechnosolutions.com" className="text-blue-600 hover:underline">admin@adtechnosolutions.com</a>.
             </p>
           </section>
         </div>
@@ -67,4 +66,4 @@ const TermsOfService = () => {
   );
 };
 
-export default TermsOfService;
+export default TermsAndConditions;

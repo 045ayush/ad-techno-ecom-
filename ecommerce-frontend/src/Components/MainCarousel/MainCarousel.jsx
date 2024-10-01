@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import mainCarousalData from './MainCarousalData';
@@ -18,58 +18,60 @@ const activeDotStyle = {
   border: '2px solid #1F2937', // Slate 600
 };
 
+// Set aspect ratio (e.g., 16:9)
+const ASPECT_RATIO = 563 / 1600;
+
 // Custom styles for the carousel
-const carouselItemStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '400px', // Default height for desktop
-  width: '100%',
-  overflow: 'hidden',
-  position: 'relative', // Ensure proper positioning for responsive adjustments
-};
-
 const imageStyle = {
-  width: '100%',
-  height: '100%',
-  objectFit: 'cover', // Ensure the image covers the container without distortion
+  width: '100%', // Always take full width
+  height: '100%', // Height adjusts based on the container
+  objectFit: 'contain', // Ensure the image doesn't crop and fits within the container
 };
 
-// Media query for responsive adjustments
-const responsiveStyles = `
-  @media (max-width: 768px) {
-    .carousel-item {
-      height: 250px; // Adjust height for tablets and mobile devices
-    }
-  }
+// MainCarousel component
+const MainCarousel = () => {
+  const [carouselHeight, setCarouselHeight] = useState(window.innerWidth * ASPECT_RATIO);
 
-  @media (max-width: 480px) {
-    .carousel-item {
-      height: 200px; // Further adjust height for small mobile devices
-    }
-  }
-`;
+  // Function to adjust height based on screen width (to maintain aspect ratio)
+  const updateCarouselHeight = () => {
+    const screenWidth = window.innerWidth;
+    setCarouselHeight(screenWidth * ASPECT_RATIO); // Height dynamically adjusts to maintain aspect ratio
+  };
 
-const items = mainCarousalData.map((image, index) => (
-  <div
-    style={carouselItemStyle}
-    key={index}
-    className='carousel-item'
-  >
-    <img
-      className='cursor-pointer'
-      role='presentation'
-      src={image}
-      alt={`Carousal Image ${index + 1}`}
-      style={imageStyle}
-    />
-  </div>
-));
+  // Add event listener on window resize
+  useEffect(() => {
+    updateCarouselHeight(); // Set initial height
+    window.addEventListener('resize', updateCarouselHeight);
+    return () => window.removeEventListener('resize', updateCarouselHeight); // Cleanup on unmount
+  }, []);
 
-const MainCarousel = () => (
-  <>
-    <style>{responsiveStyles}</style>
-    <AliceCarousel
+  const items = mainCarousalData.map((image, index) => (
+    <div
+      key={index}
+      className='carousel-item'
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: `${carouselHeight}px`, // Dynamic height based on screen width
+        width: '100%',
+        overflow: 'hidden',
+        position: 'relative',
+      }}
+    >
+      <img
+        className='cursor-pointer'
+        role='presentation'
+        src={image}
+        alt={`Carousel Image ${index + 1}`}
+        style={imageStyle}
+      />
+    </div>
+  ));
+
+  return (
+    <div className=''>
+      <AliceCarousel
       items={items}
       disableButtonsControls
       autoPlay
@@ -81,9 +83,8 @@ const MainCarousel = () => (
         />
       )}
     />
-  </>
-);
+    </div>
+  );
+};
 
 export default MainCarousel;
-
-
