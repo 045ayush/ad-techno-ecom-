@@ -19,7 +19,7 @@ const createPaymentLink = async (orderId) => {
         email: true,
       },
       reminder_enable: true,
-      callback_url: `https://adtechnosolutions.com/payment/${orderId}`,
+      callback_url: `https://ad-techno-ecom-045ayushs-projects.vercel.app/payment/${orderId}`,
       callback_method: 'get',
     };
 
